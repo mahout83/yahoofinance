@@ -1,4 +1,5 @@
 import requests
+import streamlit as st
 
 url = "https://yfapi.net/v6/finance/quote"
 
@@ -11,3 +12,4 @@ headers = {
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 print(response.text)
+st.write(response.text)
