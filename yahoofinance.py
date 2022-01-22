@@ -13,4 +13,5 @@ headers = {
 response = requests.request("GET", url, headers=headers)
 
 print(response.text)
-st.write(response.text)
+#st.write(response.text)
+st.write(
